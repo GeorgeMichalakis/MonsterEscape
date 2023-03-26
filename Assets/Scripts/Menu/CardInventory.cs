@@ -9,16 +9,7 @@ public class CardInventory : MonoBehaviour
     private TextMeshProUGUI cardQ;
     [SerializeField]
     private TextMeshProUGUI cardE;
-    void OnEnable()
-    {
-        CardDetection.onCardPicked += IncreaseCardQ;
-    }
 
-
-    void OnDisable()
-    {
-        CardDetection.onCardPicked -= IncreaseCardQ;
-    }
 
     void Update()
     {

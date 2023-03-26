@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class CardDetection : MonoBehaviour
 {
-    public delegate void CardPicked();
-    public static event CardPicked onCardPicked;
-    private void OnTriggerEnter2D(Collider2D other)
+    [SerializeField]
+    private Transform cardQ;
+    [SerializeField]
+    private Transform cardE;
+    [SerializeField]
+    private int closeToCard = 100;
+    private void Update()
     {
-        onCardPicked();
+        Debug.Log(cardQ.InverseTransformDirection(transform.position).magnitude);
     }
 }
