@@ -10,3 +10,5 @@ Tasks:
 3. Enemies
 4. Interact With Enemies
 
+Game:
+Survive for X amount of time, statue moves -> you can get the key open the door and escape
